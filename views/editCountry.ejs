@@ -1,0 +1,34 @@
+<h1>All City Details</h1>
+
+
+<% details.forEach((detail) =>
+    { %>
+<form>
+    
+    <label>City Code</label>
+    <input type="text" value="<%= detail.cty_code %>"></input>
+    <br>
+
+    <label>City Name</label>
+    <input type="text" value="<%= detail.cty_name %>"></input>
+    <br>
+
+    <label>City Population</label>
+    <input type="text" value="<%= detail.population %>"></input>
+    <br>
+
+    <label>By the Sea</label>
+    <input type="text" value="<%= detail.isCoastal %>"></input>
+    <br>
+
+    <label>Area (KM)</label>
+    <input type="text" value="<%= detail.areaKM %>"></input>
+    <br><br>
+
+    <label>Country Code</label>
+    <input type="text" value="<%= detail.co_code %>"></input>
+    <br>
+    <% }) %>
+</form>
+
+<a href="\">Home</a>
